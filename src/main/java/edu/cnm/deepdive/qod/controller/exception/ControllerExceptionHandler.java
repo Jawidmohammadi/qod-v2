@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-@RestControllerAdvice
-public class ControllerExceptionHandler {
+  @RestControllerAdvice
+  public class ControllerExceptionHandler {
 
   @ExceptionHandler(SearchTermTooShortException.class)
   @ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "Search term too short")
