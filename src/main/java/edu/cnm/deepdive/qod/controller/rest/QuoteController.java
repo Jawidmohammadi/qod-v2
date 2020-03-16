@@ -36,7 +36,7 @@ public class QuoteController {
     this.sourceRepository = sourceRepository;
   }
 
-  
+
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
       produces = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<Quote> post(@RequestBody Quote quote) {
